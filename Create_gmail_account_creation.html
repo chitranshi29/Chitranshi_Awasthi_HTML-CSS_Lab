@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <style>
+        Body {
+            background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fDNkJTIwYWJzdHJhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+            background-repeat: no-repeat;
+            bgproperties: "fixed";
+            background-size: cover;
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        button {
+            background-color: #4CAF50;
+            width: 50%;
+            color: orange;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            height: 150px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        input[type=text]:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+
+        
+        input[type=email]:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+            /* oranges! yey */
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: black;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        input[type=text],
+        input[type=email] {
+
+            width: 50%;
+            margin: 8px 0;
+            padding: 10px 10px;
+            position: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.4;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .container {
+            height: 350px;
+            width: 400px;
+            margin-top: 60px;
+            padding: 10px;
+            opacity: 0.45;
+            background-color: slategray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="container">
+            <h1 style="color:black;"> Create Gmail Account </h1>
+            <input type="text" name="Fullname" size="15" placeholder="Full Name"> <br> <br>
+            <input type="text" name="phone" size="15" placeholder="Contact Number"> <br><br>
+            <input type="email" id="email" name="email" size="15" placeholder="Enter gmail Id" id="demo"
+                onclick="myFunction()">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
+
+</body>
+
+</html>
