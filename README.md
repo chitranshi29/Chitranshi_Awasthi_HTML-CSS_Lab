@@ -15,7 +15,7 @@ c.	Position it in the centre of the page.
  
 Question 3.	
 Create_gmail_account_creation.html we have created gmail account creation form to take input from users as specified below. Take the below image as reference. 
-a.	Use background image/video for the page and fix it
+a.	Use background image/video(pexels-photo-14433444) for the page and fix it.
 b.	On focusing input tags change background color to steal blue with opacity 0.35
 c.	Add submit and reset buttons
 d.	Add border to the form
